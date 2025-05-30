@@ -1,25 +1,39 @@
-# AIsenet
+# Architecture Searching
 
-![AIsenet Cover](https://raw.githubusercontent.com/BongwooChoi/AIsenet/main/cover.jpg)
+![Architecture Searching Cover](cover.png)
 
-AIsenet은 선택한 금융 도메인에 대한 YouTube 영상, 뉴스, 그리고 재무정보를 검색하고 AI를 이용해 요약 및 분석 정보를 제공하는 서비스입니다.
+**Architecture Searching**은 건축/건설 도메인을 중심으로, YouTube 영상과 뉴스 기사를 검색하고, AI를 통해 요약 및 종합 분석 보고서를 제공하는 서비스입니다.  
+연구, 실무, 공모전, 트렌드 분석 등에 활용할 수 있도록 설계되었습니다.
 
-## 주요 기능
+---
 
-1. YouTube 영상 검색 & 영상 요약 보고서 생성
-2. 뉴스 기사 검색 & 뉴스 종합 분석 보고서 생성
+## 🛠️ 주요 기능
 
-## 서비스 URL
+1. 🎦 **YouTube 영상 검색 및 요약 보고서 생성**  
+   - 자막/설명/댓글 정보를 기반으로 Gemini 모델이 영상 내용을 분석하여 요약합니다.
 
-[https://aisenet.streamlit.app/](https://aisenet.streamlit.app/)
+2. 📰 **뉴스 기사 검색 및 종합 분석 보고서 생성**  
+   - 다수의 기사를 종합하여 주요 이슈, 다양한 시각, 시사점 등을 한 페이지 보고서로 정리합니다.
+
+---
+
+## 🚀 서비스 URL
+
+(예: Streamlit Cloud 또는 로컬 서버 주소)  
+```text
+예: https://architecture-searching.streamlit.app/
+
 
 ## 기술 스택
 
-- 개발언어: Python
-- 프레임워크: Streamlit(Pythonn 기반의 웹 애플리케이션 프레임워크)
-- 언어모델(LLM): gemini-1.5-flash-002
-- API:
-  - Google AI Studio API
-  - YouTube Data API v3
-  - Google Search API
-  - Yahoo Finance
+개발언어: Python
+웹 프레임워크: Streamlit
+언어 모델 (LLM): Gemini 2.0 Flash (Google AI Studio)
+
+사용 API:
+- Google AI Studio API
+- YouTube Data API v3
+- Serp API (Google 뉴스 검색용)
+- Apify API (YouTube 자막 보조 크롤링용)
+
+

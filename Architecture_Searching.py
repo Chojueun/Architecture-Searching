@@ -340,7 +340,7 @@ st.markdown("이 서비스는 선택한 건축/건설설 도메인에 대한 You
 
 # 검색이 실행되지 않았을 때만 이미지 표시
 if not st.session_state['search_executed']:
-    st.image("https://raw.githubusercontent.com/BongwooChoi/AIsenet/main/cover.png")
+    st.image("https://raw.githubusercontent.com/Chojueun/Architecture_Searching/main/cover.png")
 
 # 사이드바에 검색 조건 배치
 with st.sidebar:
